@@ -78,6 +78,7 @@
 			children = (
 				331FDDD523FD032D00E23F89 /* AppDelegate.swift */,
 				331FDDD723FD032D00E23F89 /* ViewController.swift */,
+				334E0CCD23FD6663001B8249 /* ViewModel.swift */,
 				331FDDD923FD032D00E23F89 /* Main.storyboard */,
 				331FDDDC23FD032D00E23F89 /* Assets.xcassets */,
 				331FDDDE23FD032D00E23F89 /* LaunchScreen.storyboard */,
@@ -85,7 +86,6 @@
 				334E0CC423FD118A001B8249 /* speachservicedemo-Bridging-Header.h */,
 				334E0CC823FD1B80001B8249 /* whatstheweatherlike.wav */,
 				334E0CC723FD1B80001B8249 /* wreck-a-nice-beach.wav */,
-				334E0CCD23FD6663001B8249 /* ViewModel.swift */,
 			);
 			path = speachservicedemo;
 			sourceTree = "<group>";
@@ -110,7 +110,7 @@
 				331FDDCE23FD032D00E23F89 /* Sources */,
 				331FDDCF23FD032D00E23F89 /* Frameworks */,
 				331FDDD023FD032D00E23F89 /* Resources */,
-				42001C0D46D92B1C5AECFCF1 /* [CP] Embed Pods Frameworks */,
+				1330B0B62A8FA60BBB6B9518 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -176,7 +176,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		42001C0D46D92B1C5AECFCF1 /* [CP] Embed Pods Frameworks */ = {
+		1330B0B62A8FA60BBB6B9518 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (

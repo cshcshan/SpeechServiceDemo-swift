@@ -22,9 +22,10 @@ class ViewController: UIViewController {
     
     var label: UILabel!
     var recognizeFileToTextButton: UIButton!
-    var translationFileToTextButton: UIButton!
+    var translateFileToTextButton: UIButton!
     var translateFileToSpeechButton: UIButton!
     var translateSpeechToSpeechButton: UIButton!
+    var translateStreamToSpeechButton: UIButton!
     
     var player: AVAudioPlayer? // must be a global variable or it doesn't work
     
@@ -44,32 +45,63 @@ class ViewController: UIViewController {
         label.lineBreakMode = .byWordWrapping
         label.numberOfLines = 0
         label.text = ""
-        
-        recognizeFileToTextButton = UIButton(frame: CGRect(x: 20, y: 400, width: uiwidth, height: 50))
-        recognizeFileToTextButton.setTitle("Recognition from file", for: .normal)
-        recognizeFileToTextButton.addTarget(self, action: #selector(recognizeFileToTextButtonPressed), for: .touchUpInside)
-        recognizeFileToTextButton.setTitleColor(.blue, for: .normal)
-        
-        translationFileToTextButton = UIButton(frame: CGRect(x: 20, y: 460, width: uiwidth, height: 50))
-        translationFileToTextButton.setTitle("Translation from file to text", for: .normal)
-        translationFileToTextButton.addTarget(self, action: #selector(translationFileToTextButtonPressed), for: .touchUpInside)
-        translationFileToTextButton.setTitleColor(.blue, for: .normal)
-        
-        translateFileToSpeechButton = UIButton(frame: CGRect(x: 20, y: 520, width: uiwidth, height: 50))
-        translateFileToSpeechButton.setTitle("Translation from file to speech", for: .normal)
-        translateFileToSpeechButton.addTarget(self, action: #selector(translateFileToSpeechButtonPressed), for: .touchUpInside)
-        translateFileToSpeechButton.setTitleColor(.blue, for: .normal)
-        
-        translateSpeechToSpeechButton = UIButton(frame: CGRect(x: 20, y: 580, width: uiwidth, height: 50))
-        translateSpeechToSpeechButton.setTitle("Translation speech to speech", for: .normal)
-        translateSpeechToSpeechButton.addTarget(self, action: #selector(translateSpeechToSpeechButtonPressed), for: .touchUpInside)
-        translateSpeechToSpeechButton.setTitleColor(.blue, for: .normal)
-        
+        label.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(label)
-        view.addSubview(recognizeFileToTextButton)
-        view.addSubview(translationFileToTextButton)
-        view.addSubview(translateFileToSpeechButton)
-        view.addSubview(translateSpeechToSpeechButton)
+        
+        recognizeFileToTextButton = generateButton(title: "Recognition from file", selector: #selector(recognizeFileToTextButtonPressed))
+        translateFileToTextButton = generateButton(title: "Translation from file to text", selector: #selector(translateFileToTextButtonPressed))
+        translateFileToSpeechButton = generateButton(title: "Translation from file to speech", selector: #selector(translateFileToSpeechButtonPressed))
+        translateSpeechToSpeechButton = generateButton(title: "Translation speech to speech", selector: #selector(translateSpeechToSpeechButtonPressed))
+        translateStreamToSpeechButton = generateButton(title: "Translation stream to speech", selector: #selector(translateStreamToSpeechButtonPressed))
+        addVerticalConstraints()
+        addHorizontalConstraint(label, id: "label")
+        addHorizontalConstraint(recognizeFileToTextButton, id: "recognizeFileToTextButton")
+        addHorizontalConstraint(translateFileToTextButton, id: "translateFileToTextButton")
+        addHorizontalConstraint(translateFileToSpeechButton, id: "translateFileToSpeechButton")
+        addHorizontalConstraint(translateSpeechToSpeechButton, id: "translateSpeechToSpeechButton")
+        addHorizontalConstraint(translateStreamToSpeechButton, id: "translateStreamToSpeechButton")
+    }
+    
+    private func generateButton(title: String, selector: Selector) -> UIButton {
+        let uiwidth = UIScreen.main.bounds.width - 40
+        let button = UIButton(frame: CGRect(origin: .zero, size: CGSize(width: uiwidth, height: 50)))
+        button.setTitle(title, for: .normal)
+        button.addTarget(self, action: selector, for: .touchUpInside)
+        button.setTitleColor(.blue, for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(button)
+        return button
+    }
+    
+    private func addVerticalConstraints() {
+        let views: [String: UIView] = ["view": view,
+                                       "label": label,
+                                       "recognizeFileToTextButton": recognizeFileToTextButton,
+                                       "translateFileToTextButton": translateFileToTextButton,
+                                       "translateFileToSpeechButton": translateFileToSpeechButton,
+                                       "translateSpeechToSpeechButton": translateSpeechToSpeechButton,
+                                       "translateStreamToSpeechButton": translateStreamToSpeechButton]
+        let metrics: [String: CGFloat] = ["buttonHeight": 50, "top": 20 + 44]
+        var verticalFormat = "V:|-(top)-[label]-10@100-[recognizeFileToTextButton(buttonHeight)]"
+        verticalFormat.append("-5-[translateFileToTextButton(buttonHeight)]")
+        verticalFormat.append("-5-[translateFileToSpeechButton(buttonHeight)]")
+        verticalFormat.append("-5-[translateSpeechToSpeechButton(buttonHeight)]")
+        verticalFormat.append("-5-[translateStreamToSpeechButton(buttonHeight)]-10-|")
+        let verticalConstraint = NSLayoutConstraint.constraints(withVisualFormat: verticalFormat, options: .directionLeadingToTrailing, metrics: metrics, views: views)
+        view.addConstraints(verticalConstraint)
+    }
+    
+    private func addHorizontalConstraint(_ button: UIView, id: String) {
+        let views: [String: UIView] = ["view": view,
+                                       "label": label,
+                                       "recognizeFileToTextButton": recognizeFileToTextButton,
+                                       "translateFileToTextButton": translateFileToTextButton,
+                                       "translateFileToSpeechButton": translateFileToSpeechButton,
+                                       "translateSpeechToSpeechButton": translateSpeechToSpeechButton,
+                                       "translateStreamToSpeechButton": translateStreamToSpeechButton]
+        let metrics: [String: CGFloat] = ["buttonHeight": button.frame.height]
+        let horizontalConstraint = NSLayoutConstraint.constraints(withVisualFormat: "H:|-20-[\(id)]-20-|", options: .directionLeadingToTrailing, metrics: metrics, views: views)
+        view.addConstraints(horizontalConstraint)
     }
     
     @objc func recognizeFileToTextButtonPressed() {
@@ -80,10 +112,12 @@ class ViewController: UIViewController {
         }
     }
     
-    @objc func translationFileToTextButtonPressed() {
+    @objc func translateFileToTextButtonPressed() {
         label.text = ""
         DispatchQueue.global(qos: .userInitiated).async { [weak self] in
-            let path = Bundle.main.path(forResource: "whatstheweatherlike", ofType: "wav")!
+            var path = Bundle.main.path(forResource: "whatstheweatherlike", ofType: "wav")!
+            self?.viewModel.translationFileToText(wavFilePath: path, fromLang: "en-US", toLangs: ["zh-Hant", "fr"])
+            path = Bundle.main.path(forResource: "wreck-a-nice-beach", ofType: "wav")!
             self?.viewModel.translationFileToText(wavFilePath: path, fromLang: "en-US", toLangs: ["zh-Hant", "fr"])
         }
     }
@@ -91,10 +125,12 @@ class ViewController: UIViewController {
     @objc func translateFileToSpeechButtonPressed() {
         label.text = ""
         DispatchQueue.global(qos: .userInitiated).async { [weak self] in
-            let path = Bundle.main.path(forResource: "whatstheweatherlike", ofType: "wav")!
+            var path = Bundle.main.path(forResource: "whatstheweatherlike", ofType: "wav")!
             // Sets the synthesis output voice name.
             // Replace with the languages of your choice, from list found here: https://aka.ms/speech/tts-languages
             // https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support
+            self?.viewModel.translateFileToSpeech(wavFilePath: path, fromLang: "en-US", toLang: "zh-Hant", voiceName: "zh-TW-Yating-Apollo")
+            path = Bundle.main.path(forResource: "wreck-a-nice-beach", ofType: "wav")!
             self?.viewModel.translateFileToSpeech(wavFilePath: path, fromLang: "en-US", toLang: "zh-Hant", voiceName: "zh-TW-Yating-Apollo")
         }
     }
@@ -103,6 +139,14 @@ class ViewController: UIViewController {
         label.text = ""
         DispatchQueue.global(qos: .userInitiated).async { [weak self] in
             self?.viewModel.translateSpeechToSpeech(fromLang: "zh-TW", toLang: "en", voiceName: "en-US-JessaRUS")
+        }
+    }
+    
+    @objc func translateStreamToSpeechButtonPressed() {
+        label.text = ""
+        DispatchQueue.global(qos: .userInitiated).async { [weak self] in
+            let path = Bundle.main.path(forResource: "whatstheweatherlike", ofType: "wav")!
+            self?.viewModel.translateStreamToSpeech(wavFilePath: path, fromLang: "en-US", toLang: "zh-Hant", voiceName: "zh-TW-Yating-Apollo")
         }
     }
     

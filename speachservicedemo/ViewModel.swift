@@ -31,7 +31,7 @@ class ViewModel {
         
         speechConfig.speechRecognitionLanguage = fromLang
         
-        guard let audioConfig = getAudioConfig(wavFilePath: wavFilePath) else {
+        guard let audioConfig = getAudioConfigFromFile(wavFilePath) else {
             print("audioConfig is null")
             return
         }
@@ -75,7 +75,7 @@ class ViewModel {
             translationConfig.addTargetLanguage(lang)
         }
         
-        guard let audioConfig = getAudioConfig(wavFilePath: wavFilePath) else {
+        guard let audioConfig = getAudioConfigFromFile(wavFilePath) else {
             print("audioConfig is null")
             return
         }
@@ -130,7 +130,7 @@ class ViewModel {
         translationConfig.addTargetLanguage(toLang)
         translationConfig.voiceName = voiceName
         
-        guard let audioConfig = getAudioConfig(wavFilePath: wavFilePath) else {
+        guard let audioConfig = getAudioConfigFromFile(wavFilePath) else {
             print("audioConfig is null")
             return
         }
@@ -148,11 +148,12 @@ class ViewModel {
             }
             guard audio.count > 0 else { return }
             print("audio size: \(audio.count)")
-            print("AUDIO SYNTHESIZED: \(audio.count) byte(s)")
-            print("AUDIO SYNTHESIZED: \(audio.count) byte(s) (COMPLETE)")
-            if let data = Data(base64Encoded: audio.base64EncodedData(), options: .ignoreUnknownCharacters) {
-                self?.playAudio(data)
-            }
+//            print("AUDIO SYNTHESIZED: \(audio.count) byte(s)")
+//            print("AUDIO SYNTHESIZED: \(audio.count) byte(s) (COMPLETE)")
+//            if let data = Data(base64Encoded: audio.base64EncodedData(), options: .ignoreUnknownCharacters) {
+//                self?.playAudio(data)
+//            }
+            self?.playAudio(audio)
         }
         
         recognizer.addRecognizingEventHandler { [weak self] (reco, env) in
@@ -164,11 +165,6 @@ class ViewModel {
         
         switch result.reason {
         case .translatedSpeech:
-//            print("RECOGNIZED \(fromLang) : \(result.text ?? "")")
-//            print("TRANSLATED into \(toLang) : \(result.translations[toLang] ?? "")")
-//            print("===")
-//            print(result.translations)
-//            updateLabel(text: (result.translations[toLang] as? String) ?? "", color: .black)
             print(result.translations)
             var msg = "RECOGNIZED \(fromLang) : \(result.text ?? "")"
             msg += "\nTRANSLATED into \(toLang) : \(result.translations[toLang] ?? "")"
@@ -203,7 +199,7 @@ class ViewModel {
         translationConfig.addTargetLanguage(toLang)
         translationConfig.voiceName = voiceName
         
-        guard let audioConfig = getAudioConfig() else {
+        guard let audioConfig = getAudioConfigFromMic() else {
             print("audioConfig is null")
             return
         }
@@ -221,11 +217,117 @@ class ViewModel {
             }
             guard audio.count > 0 else { return }
             print("audio size: \(audio.count)")
-            print("AUDIO SYNTHESIZED: \(audio.count) byte(s)")
-            print("AUDIO SYNTHESIZED: \(audio.count) byte(s) (COMPLETE)")
-            if let data = Data(base64Encoded: audio.base64EncodedData(), options: .ignoreUnknownCharacters) {
-                self?.playAudio(data)
+            self?.playAudio(audio)
+        }
+        
+        recognizer.addRecognizingEventHandler { [weak self] (reco, env) in
+            print("intermediate recognition result: \(env.result.text ?? "(no result)")")
+            self?.updateLabel(text: env.result.text ?? "", color: .gray)
+        }
+        
+        //
+        
+        recognizer.addRecognizedEventHandler { [weak self] (reco, env) in
+            let result = env.result
+            print("RecognizedEventHandler ")
+            switch result.reason {
+            case .translatedSpeech:
+                print(result.translations)
+                var msg = "RECOGNIZED \(fromLang) : \(result.text ?? "")"
+                msg += "\nTRANSLATED into \(toLang) : \(result.translations[toLang] ?? "")"
+                print(msg)
+                self?.updateLabel(text: msg, color: .black)
+            case .recognizedSpeech:
+                print("RECOGNIZED \(fromLang) : \(result.text ?? "") (text could not be translated)")
+            case .noMatch:
+                print("NOMATCH: Speech could not be recognized.")
+            case .canceled:
+                let detail = try! SPXCancellationDetails(fromCanceledRecognitionResult: result)
+                print("cancelled, detail: \(detail.errorDetails!)")
+                self?.updateLabel(text: "cancelled, detail: \(detail.errorDetails!)", color: .black)
+                if detail.reason == .error {
+                    print("CANCELED: ErrorCode=\(detail.errorCode)")
+                    print("CANCELED: ErrorDetails=\(detail.errorDetails ?? "")")
+                    print("CANCELED: Did you update the subscription info?")
+                }
+            default:
+                print("There was an error.")
+                self?.updateLabel(text: "Speech Recognition Error", color: .red)
             }
+        }
+        
+        recognizer.addCanceledEventHandler { (reco, env) in
+            print("cancel recognizer")
+        }
+        
+        recognizer.addSessionStartedEventHandler { (reco, env) in
+            print("session started")
+        }
+        
+        recognizer.addSessionStoppedEventHandler { (reco, env) in
+            print("session stopped")
+        }
+        
+        try! recognizer.startContinuousRecognition()
+//        try! recognizer.stopContinuousRecognition()
+        
+//        let result = try! recognizer.recognizeOnce()
+//
+//        switch result.reason {
+//        case .translatedSpeech:
+//            print(result.translations)
+//            var msg = "RECOGNIZED \(fromLang) : \(result.text ?? "")"
+//            msg += "\nTRANSLATED into \(toLang) : \(result.translations[toLang] ?? "")"
+//            print(msg)
+//            updateLabel(text: msg, color: .black)
+//        case .recognizedSpeech:
+//            print("RECOGNIZED \(fromLang) : \(result.text ?? "") (text could not be translated)")
+//        case .noMatch:
+//            print("NOMATCH: Speech could not be recognized.")
+//        case .canceled:
+//            let detail = try! SPXCancellationDetails(fromCanceledRecognitionResult: result)
+//            print("cancelled, detail: \(detail.errorDetails!)")
+//            updateLabel(text: "cancelled, detail: \(detail.errorDetails!)", color: .black)
+//            if detail.reason == .error {
+//                print("CANCELED: ErrorCode=\(detail.errorCode)")
+//                print("CANCELED: ErrorDetails=\(detail.errorDetails ?? "")")
+//                print("CANCELED: Did you update the subscription info?")
+//            }
+//        default:
+//            print("There was an error.")
+//            updateLabel(text: "Speech Recognition Error", color: .red)
+//        }
+    }
+    
+    func translateStreamToSpeech(wavFilePath: String, fromLang: String, toLang: String, voiceName: String) {
+        guard let translationConfig = getTranslationConfig() else {
+            print("translationConfig is null")
+            return
+        }
+        
+        translationConfig.speechRecognitionLanguage = fromLang
+        translationConfig.addTargetLanguage(toLang)
+        translationConfig.voiceName = voiceName
+        
+        guard let audioConfig = getAudioConfigInputStream(wavFilePath) else {
+            print("audioConfig is null")
+            return
+        }
+        
+        print("Translating stream to speech ...")
+        updateLabel(text: "Translating stream to speech ...", color: .gray)
+        
+        let recognizer = try! SPXTranslationRecognizer(speechTranslationConfiguration: translationConfig,
+                                                       audioConfiguration: audioConfig)
+        
+        recognizer.addSynthesizingEventHandler { [weak self] (reco, env) in
+            guard let audio = env.result.audio else {
+                print("audio is null")
+                return
+            }
+            guard audio.count > 0 else { return }
+            print("audio size: \(audio.count)")
+            self?.playAudio(audio)
         }
         
         recognizer.addRecognizingEventHandler { [weak self] (reco, env) in
@@ -280,12 +382,23 @@ extension ViewModel {
         return speechConfig
     }
     
-    private func getAudioConfig(wavFilePath: String? = nil) -> SPXAudioConfiguration? {
-        guard let wavFilePath = wavFilePath else {
-            return SPXAudioConfiguration()
-        }
+    private func getAudioConfigFromMic() -> SPXAudioConfiguration? {
+        return SPXAudioConfiguration()
+    }
+    
+    private func getAudioConfigFromFile(_ wavFilePath: String) -> SPXAudioConfiguration? {
         guard !wavFilePath.isEmpty else { return nil }
         return SPXAudioConfiguration(wavFileInput: wavFilePath)
+    }
+    
+    private func getAudioConfigInputStream(_ wavFilePath: String) -> SPXAudioConfiguration? {
+        guard !wavFilePath.isEmpty else { return nil }
+        let fileUrl = URL(fileURLWithPath: wavFilePath)
+        guard let data = try? Data(contentsOf: fileUrl) else { return nil }
+        guard let format = SPXAudioStreamFormat(usingPCMWithSampleRate: 16000, bitsPerSample: 16, channels: 1) else { return nil }
+        guard let inputStream = SPXPushAudioInputStream(audioFormat: format) else { return nil }
+        inputStream.write(data)
+        return SPXAudioConfiguration(streamInput: inputStream)
     }
     
     private func getTranslationConfig() -> SPXSpeechTranslationConfiguration? {
