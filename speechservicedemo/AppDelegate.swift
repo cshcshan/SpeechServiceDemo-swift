@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  speachservicedemo
+//  speechservicedemo
 //
 //  Created by Han Chen on 2020/2/19.
 //  Copyright © 2020 Han Chen. All rights reserved.

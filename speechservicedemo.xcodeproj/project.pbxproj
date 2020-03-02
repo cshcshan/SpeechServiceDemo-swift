@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		195A961F4476366353D5E6F8 /* Pods_speechservicedemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F260A140BE25C90EDD3B829F /* Pods_speechservicedemo.framework */; };
 		331FDDD623FD032D00E23F89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331FDDD523FD032D00E23F89 /* AppDelegate.swift */; };
 		331FDDD823FD032D00E23F89 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331FDDD723FD032D00E23F89 /* ViewController.swift */; };
 		331FDDDB23FD032D00E23F89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 331FDDD923FD032D00E23F89 /* Main.storyboard */; };
@@ -15,23 +16,24 @@
 		334E0CC923FD1B80001B8249 /* wreck-a-nice-beach.wav in Resources */ = {isa = PBXBuildFile; fileRef = 334E0CC723FD1B80001B8249 /* wreck-a-nice-beach.wav */; };
 		334E0CCA23FD1B80001B8249 /* whatstheweatherlike.wav in Resources */ = {isa = PBXBuildFile; fileRef = 334E0CC823FD1B80001B8249 /* whatstheweatherlike.wav */; };
 		334E0CCE23FD6663001B8249 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334E0CCD23FD6663001B8249 /* ViewModel.swift */; };
-		36905A396E8B89929E5DFED9 /* Pods_speachservicedemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57A129D4668086C7CA60282D /* Pods_speachservicedemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		331FDDD223FD032D00E23F89 /* speachservicedemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = speachservicedemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		331FDDD223FD032D00E23F89 /* speechservicedemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = speechservicedemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		331FDDD523FD032D00E23F89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		331FDDD723FD032D00E23F89 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		331FDDDA23FD032D00E23F89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		331FDDDC23FD032D00E23F89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		331FDDDF23FD032D00E23F89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		331FDDE123FD032D00E23F89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		334E0CC423FD118A001B8249 /* speachservicedemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "speachservicedemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		334E0CC423FD118A001B8249 /* speechservicedemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "speechservicedemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		334E0CC723FD1B80001B8249 /* wreck-a-nice-beach.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "wreck-a-nice-beach.wav"; sourceTree = "<group>"; };
 		334E0CC823FD1B80001B8249 /* whatstheweatherlike.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = whatstheweatherlike.wav; sourceTree = "<group>"; };
 		334E0CCD23FD6663001B8249 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
-		57A129D4668086C7CA60282D /* Pods_speachservicedemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_speachservicedemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F298FFA8FADF7DECC00C954 /* Pods-speechservicedemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-speechservicedemo.release.xcconfig"; path = "Target Support Files/Pods-speechservicedemo/Pods-speechservicedemo.release.xcconfig"; sourceTree = "<group>"; };
+		BAD647AA7E3FF98A6575F3EE /* Pods-speechservicedemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-speechservicedemo.debug.xcconfig"; path = "Target Support Files/Pods-speechservicedemo/Pods-speechservicedemo.debug.xcconfig"; sourceTree = "<group>"; };
 		E7FC32850143F50F75B46335 /* Pods-speachservicedemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-speachservicedemo.debug.xcconfig"; path = "Target Support Files/Pods-speachservicedemo/Pods-speachservicedemo.debug.xcconfig"; sourceTree = "<group>"; };
+		F260A140BE25C90EDD3B829F /* Pods_speechservicedemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_speechservicedemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF2ED3F8E5C85100FDB3BC8F /* Pods-speachservicedemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-speachservicedemo.release.xcconfig"; path = "Target Support Files/Pods-speachservicedemo/Pods-speachservicedemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -40,7 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36905A396E8B89929E5DFED9 /* Pods_speachservicedemo.framework in Frameworks */,
+				195A961F4476366353D5E6F8 /* Pods_speechservicedemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,7 +52,7 @@
 		1276A079ED5CC20A65A9452C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				57A129D4668086C7CA60282D /* Pods_speachservicedemo.framework */,
+				F260A140BE25C90EDD3B829F /* Pods_speechservicedemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -58,7 +60,7 @@
 		331FDDC923FD032D00E23F89 = {
 			isa = PBXGroup;
 			children = (
-				331FDDD423FD032D00E23F89 /* speachservicedemo */,
+				331FDDD423FD032D00E23F89 /* speechservicedemo */,
 				331FDDD323FD032D00E23F89 /* Products */,
 				E6330ABFBC0044AB9EEF2D98 /* Pods */,
 				1276A079ED5CC20A65A9452C /* Frameworks */,
@@ -68,12 +70,12 @@
 		331FDDD323FD032D00E23F89 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				331FDDD223FD032D00E23F89 /* speachservicedemo.app */,
+				331FDDD223FD032D00E23F89 /* speechservicedemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		331FDDD423FD032D00E23F89 /* speachservicedemo */ = {
+		331FDDD423FD032D00E23F89 /* speechservicedemo */ = {
 			isa = PBXGroup;
 			children = (
 				331FDDD523FD032D00E23F89 /* AppDelegate.swift */,
@@ -83,11 +85,11 @@
 				331FDDDC23FD032D00E23F89 /* Assets.xcassets */,
 				331FDDDE23FD032D00E23F89 /* LaunchScreen.storyboard */,
 				331FDDE123FD032D00E23F89 /* Info.plist */,
-				334E0CC423FD118A001B8249 /* speachservicedemo-Bridging-Header.h */,
+				334E0CC423FD118A001B8249 /* speechservicedemo-Bridging-Header.h */,
 				334E0CC823FD1B80001B8249 /* whatstheweatherlike.wav */,
 				334E0CC723FD1B80001B8249 /* wreck-a-nice-beach.wav */,
 			);
-			path = speachservicedemo;
+			path = speechservicedemo;
 			sourceTree = "<group>";
 		};
 		E6330ABFBC0044AB9EEF2D98 /* Pods */ = {
@@ -95,6 +97,8 @@
 			children = (
 				E7FC32850143F50F75B46335 /* Pods-speachservicedemo.debug.xcconfig */,
 				FF2ED3F8E5C85100FDB3BC8F /* Pods-speachservicedemo.release.xcconfig */,
+				BAD647AA7E3FF98A6575F3EE /* Pods-speechservicedemo.debug.xcconfig */,
+				3F298FFA8FADF7DECC00C954 /* Pods-speechservicedemo.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -102,9 +106,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		331FDDD123FD032D00E23F89 /* speachservicedemo */ = {
+		331FDDD123FD032D00E23F89 /* speechservicedemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 331FDDE423FD032D00E23F89 /* Build configuration list for PBXNativeTarget "speachservicedemo" */;
+			buildConfigurationList = 331FDDE423FD032D00E23F89 /* Build configuration list for PBXNativeTarget "speechservicedemo" */;
 			buildPhases = (
 				5E3C02DE84C6142F333FA68D /* [CP] Check Pods Manifest.lock */,
 				331FDDCE23FD032D00E23F89 /* Sources */,
@@ -116,9 +120,9 @@
 			);
 			dependencies = (
 			);
-			name = speachservicedemo;
+			name = speechservicedemo;
 			productName = speachservicedemo;
-			productReference = 331FDDD223FD032D00E23F89 /* speachservicedemo.app */;
+			productReference = 331FDDD223FD032D00E23F89 /* speechservicedemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -142,7 +146,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 331FDDCD23FD032D00E23F89 /* Build configuration list for PBXProject "speachservicedemo" */;
+			buildConfigurationList = 331FDDCD23FD032D00E23F89 /* Build configuration list for PBXProject "speechservicedemo" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -155,7 +159,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				331FDDD123FD032D00E23F89 /* speachservicedemo */,
+				331FDDD123FD032D00E23F89 /* speechservicedemo */,
 			);
 		};
 /* End PBXProject section */
@@ -182,15 +186,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-speachservicedemo/Pods-speachservicedemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-speechservicedemo/Pods-speechservicedemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-speachservicedemo/Pods-speachservicedemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-speechservicedemo/Pods-speechservicedemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-speachservicedemo/Pods-speachservicedemo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-speechservicedemo/Pods-speechservicedemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5E3C02DE84C6142F333FA68D /* [CP] Check Pods Manifest.lock */ = {
@@ -208,7 +212,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-speachservicedemo-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-speechservicedemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -368,21 +372,21 @@
 		};
 		331FDDE523FD032D00E23F89 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E7FC32850143F50F75B46335 /* Pods-speachservicedemo.debug.xcconfig */;
+			baseConfigurationReference = BAD647AA7E3FF98A6575F3EE /* Pods-speechservicedemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QL662FZ3MK;
-				INFOPLIST_FILE = speachservicedemo/Info.plist;
+				INFOPLIST_FILE = speechservicedemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cshan.speachservicedemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cshan.speechservicedemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "speachservicedemo/speachservicedemo-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "speechservicedemo/speechservicedemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -391,21 +395,21 @@
 		};
 		331FDDE623FD032D00E23F89 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF2ED3F8E5C85100FDB3BC8F /* Pods-speachservicedemo.release.xcconfig */;
+			baseConfigurationReference = 3F298FFA8FADF7DECC00C954 /* Pods-speechservicedemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QL662FZ3MK;
-				INFOPLIST_FILE = speachservicedemo/Info.plist;
+				INFOPLIST_FILE = speechservicedemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cshan.speachservicedemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cshan.speechservicedemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "speachservicedemo/speachservicedemo-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "speechservicedemo/speechservicedemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -414,7 +418,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		331FDDCD23FD032D00E23F89 /* Build configuration list for PBXProject "speachservicedemo" */ = {
+		331FDDCD23FD032D00E23F89 /* Build configuration list for PBXProject "speechservicedemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				331FDDE223FD032D00E23F89 /* Debug */,
@@ -423,7 +427,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		331FDDE423FD032D00E23F89 /* Build configuration list for PBXNativeTarget "speachservicedemo" */ = {
+		331FDDE423FD032D00E23F89 /* Build configuration list for PBXNativeTarget "speechservicedemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				331FDDE523FD032D00E23F89 /* Debug */,

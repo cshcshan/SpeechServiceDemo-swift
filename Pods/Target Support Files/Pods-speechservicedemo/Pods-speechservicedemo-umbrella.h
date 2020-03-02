@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_speachservicedemoVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_speachservicedemoVersionString[];
+FOUNDATION_EXPORT double Pods_speechservicedemoVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_speechservicedemoVersionString[];
 
