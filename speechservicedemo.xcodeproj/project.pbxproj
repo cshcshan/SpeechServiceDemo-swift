@@ -16,6 +16,8 @@
 		334E0CC923FD1B80001B8249 /* wreck-a-nice-beach.wav in Resources */ = {isa = PBXBuildFile; fileRef = 334E0CC723FD1B80001B8249 /* wreck-a-nice-beach.wav */; };
 		334E0CCA23FD1B80001B8249 /* whatstheweatherlike.wav in Resources */ = {isa = PBXBuildFile; fileRef = 334E0CC823FD1B80001B8249 /* whatstheweatherlike.wav */; };
 		334E0CCE23FD6663001B8249 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334E0CCD23FD6663001B8249 /* ViewModel.swift */; };
+		33D9A750240E6234001231DD /* SpeechTranslationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D9A74F240E6234001231DD /* SpeechTranslationViewController.swift */; };
+		33D9A752240E63AD001231DD /* SpeechTranslation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33D9A751240E63AD001231DD /* SpeechTranslation.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		334E0CC723FD1B80001B8249 /* wreck-a-nice-beach.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "wreck-a-nice-beach.wav"; sourceTree = "<group>"; };
 		334E0CC823FD1B80001B8249 /* whatstheweatherlike.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = whatstheweatherlike.wav; sourceTree = "<group>"; };
 		334E0CCD23FD6663001B8249 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		33D9A74F240E6234001231DD /* SpeechTranslationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechTranslationViewController.swift; sourceTree = "<group>"; };
+		33D9A751240E63AD001231DD /* SpeechTranslation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SpeechTranslation.storyboard; sourceTree = "<group>"; };
 		3F298FFA8FADF7DECC00C954 /* Pods-speechservicedemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-speechservicedemo.release.xcconfig"; path = "Target Support Files/Pods-speechservicedemo/Pods-speechservicedemo.release.xcconfig"; sourceTree = "<group>"; };
 		BAD647AA7E3FF98A6575F3EE /* Pods-speechservicedemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-speechservicedemo.debug.xcconfig"; path = "Target Support Files/Pods-speechservicedemo/Pods-speechservicedemo.debug.xcconfig"; sourceTree = "<group>"; };
 		E7FC32850143F50F75B46335 /* Pods-speachservicedemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-speachservicedemo.debug.xcconfig"; path = "Target Support Files/Pods-speachservicedemo/Pods-speachservicedemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -80,8 +84,10 @@
 			children = (
 				331FDDD523FD032D00E23F89 /* AppDelegate.swift */,
 				331FDDD723FD032D00E23F89 /* ViewController.swift */,
-				334E0CCD23FD6663001B8249 /* ViewModel.swift */,
 				331FDDD923FD032D00E23F89 /* Main.storyboard */,
+				33D9A74F240E6234001231DD /* SpeechTranslationViewController.swift */,
+				33D9A751240E63AD001231DD /* SpeechTranslation.storyboard */,
+				334E0CCD23FD6663001B8249 /* ViewModel.swift */,
 				331FDDDC23FD032D00E23F89 /* Assets.xcassets */,
 				331FDDDE23FD032D00E23F89 /* LaunchScreen.storyboard */,
 				331FDDE123FD032D00E23F89 /* Info.plist */,
@@ -173,6 +179,7 @@
 				331FDDE023FD032D00E23F89 /* LaunchScreen.storyboard in Resources */,
 				334E0CCA23FD1B80001B8249 /* whatstheweatherlike.wav in Resources */,
 				331FDDDD23FD032D00E23F89 /* Assets.xcassets in Resources */,
+				33D9A752240E63AD001231DD /* SpeechTranslation.storyboard in Resources */,
 				331FDDDB23FD032D00E23F89 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,6 +235,7 @@
 			files = (
 				331FDDD823FD032D00E23F89 /* ViewController.swift in Sources */,
 				334E0CCE23FD6663001B8249 /* ViewModel.swift in Sources */,
+				33D9A750240E6234001231DD /* SpeechTranslationViewController.swift in Sources */,
 				331FDDD623FD032D00E23F89 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

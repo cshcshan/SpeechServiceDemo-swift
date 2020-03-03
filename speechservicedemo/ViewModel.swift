@@ -23,7 +23,12 @@ class ViewModel {
     private let subscriptionKey: String = "782b2f38a27c405e8120104cefd2e971"
     private var subscriptionRegion: String = "westus"
     
+    private var speechRecognizer: SPXSpeechRecognizer?
+    private var translationRecognizer: SPXTranslationRecognizer?
+    
     func recognizeFileToText(wavFilePath: String, fromLang: String) {
+        stop(needUpdateLabel: false)
+        
         guard let speechConfig = getSpeechConfig() else {
             print("speechConfig is null")
             return
@@ -39,8 +44,10 @@ class ViewModel {
         print("Recognizing file to text ...")
         updateLabel(text: "Recognizing file to text ... ", color: .gray)
         
-        let recognizer = try! SPXSpeechRecognizer(speechConfiguration: speechConfig,
-                                                  audioConfiguration: audioConfig)
+        speechRecognizer = try! SPXSpeechRecognizer(speechConfiguration: speechConfig,
+                                                    audioConfiguration: audioConfig)
+        
+        guard let recognizer = speechRecognizer else { return }
         
         recognizer.addRecognizingEventHandler { [weak self] (reco, env) in
             print("intermediate recognition result: \(env.result.text ?? "(no result)")")
@@ -65,6 +72,8 @@ class ViewModel {
     }
     
     func translationFileToText(wavFilePath: String, fromLang: String, toLangs: [String]) {
+        stop(needUpdateLabel: false)
+        
         guard let translationConfig = getTranslationConfig() else {
             print("translationConfig is null")
             return
@@ -83,8 +92,10 @@ class ViewModel {
         print("Translating file to text ...")
         updateLabel(text: "Translating file to text ...", color: .gray)
         
-        let recognizer = try! SPXTranslationRecognizer(speechTranslationConfiguration: translationConfig,
-                                                       audioConfiguration: audioConfig)
+        translationRecognizer = try! SPXTranslationRecognizer(speechTranslationConfiguration: translationConfig,
+                                                              audioConfiguration: audioConfig)
+        
+        guard let recognizer = translationRecognizer else { return }
         
         recognizer.addRecognizingEventHandler { [weak self] (reco, env) in
             print("intermediate recognition result: \(env.result.text ?? "(no result)")")
@@ -121,6 +132,8 @@ class ViewModel {
     }
     
     func translateFileToSpeech(wavFilePath: String, fromLang: String, toLang: String, voiceName: String) {
+        stop(needUpdateLabel: false)
+        
         guard let translationConfig = getTranslationConfig() else {
             print("translationConfig is null")
             return
@@ -138,8 +151,10 @@ class ViewModel {
         print("Translating file to speech ...")
         updateLabel(text: "Translating file to speech ...", color: .gray)
         
-        let recognizer = try! SPXTranslationRecognizer(speechTranslationConfiguration: translationConfig,
-                                                       audioConfiguration: audioConfig)
+        translationRecognizer = try! SPXTranslationRecognizer(speechTranslationConfiguration: translationConfig,
+                                                              audioConfiguration: audioConfig)
+        
+        guard let recognizer = translationRecognizer else { return }
         
         recognizer.addSynthesizingEventHandler { [weak self] (reco, env) in
             guard let audio = env.result.audio else {
@@ -190,6 +205,8 @@ class ViewModel {
     }
     
     func translateSpeechToSpeech(fromLang: String, toLang: String, voiceName: String) {
+        stop(needUpdateLabel: false)
+        
         guard let translationConfig = getTranslationConfig() else {
             print("translationConfig is null")
             return
@@ -205,10 +222,12 @@ class ViewModel {
         }
         
         print("Translating speech to speech ...")
-        updateLabel(text: "Translating speech to speech ...", color: .gray)
+        updateLabel(text: "Translating speech ...", color: .gray)
         
-        let recognizer = try! SPXTranslationRecognizer(speechTranslationConfiguration: translationConfig,
-                                                       audioConfiguration: audioConfig)
+        translationRecognizer = try! SPXTranslationRecognizer(speechTranslationConfiguration: translationConfig,
+                                                              audioConfiguration: audioConfig)
+        
+        guard let recognizer = translationRecognizer else { return }
         
         recognizer.addSynthesizingEventHandler { [weak self] (reco, env) in
             guard let audio = env.result.audio else {
@@ -300,6 +319,8 @@ class ViewModel {
     }
     
     func translateStreamToSpeech(wavFilePath: String, fromLang: String, toLang: String, voiceName: String) {
+        stop(needUpdateLabel: false)
+        
         guard let translationConfig = getTranslationConfig() else {
             print("translationConfig is null")
             return
@@ -315,10 +336,12 @@ class ViewModel {
         }
         
         print("Translating stream to speech ...")
-        updateLabel(text: "Translating stream to speech ...", color: .gray)
+        updateLabel(text: "Translating file stream to speech ...", color: .gray)
         
-        let recognizer = try! SPXTranslationRecognizer(speechTranslationConfiguration: translationConfig,
-                                                       audioConfiguration: audioConfig)
+        translationRecognizer = try! SPXTranslationRecognizer(speechTranslationConfiguration: translationConfig,
+                                                              audioConfiguration: audioConfig)
+        
+        guard let recognizer = translationRecognizer else { return }
         
         recognizer.addSynthesizingEventHandler { [weak self] (reco, env) in
             guard let audio = env.result.audio else {
@@ -361,6 +384,21 @@ class ViewModel {
             print("There was an error.")
             updateLabel(text: "Speech Recognition Error", color: .red)
         }
+    }
+    
+    func stop(needUpdateLabel: Bool) {
+        if let recognizer = speechRecognizer {
+            try! recognizer.stopContinuousRecognition()
+            if needUpdateLabel {
+                updateLabel(text: "Speech recognizer is terminated\n\nPlease press \"Translate\" button below then speech ... ", color: .black)
+            }
+        }
+        if let recognizer = translationRecognizer {
+            try! recognizer.stopContinuousRecognition()
+            updateLabel(text: "Translation recognizer is terminated\n\nPlease press \"Translate\" button below then speech ... ", color: .black)
+        }
+        speechRecognizer = nil
+        translationRecognizer = nil
     }
 }
 

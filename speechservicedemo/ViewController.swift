@@ -68,6 +68,8 @@ class ViewController: UIViewController {
         button.setTitle(title, for: .normal)
         button.addTarget(self, action: selector, for: .touchUpInside)
         button.setTitleColor(.blue, for: .normal)
+        button.layer.borderWidth = 1
+        button.layer.borderColor = UIColor.black.cgColor
         button.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(button)
         return button
