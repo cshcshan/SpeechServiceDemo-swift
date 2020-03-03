@@ -1,6 +1,0 @@
-framework module Pods_speechservicedemo {
-  umbrella header "Pods-speechservicedemo-umbrella.h"
-
-  export *
-  module * { export * }
-}
