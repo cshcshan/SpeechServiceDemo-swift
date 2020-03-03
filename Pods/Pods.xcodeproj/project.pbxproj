@@ -7,108 +7,184 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		97D3B6926BF0A2ABAB7F043559FA98A9 /* MicrosoftCognitiveServicesSpeech-iOS */ = {
+		0901BFEAE35D347A5010E4FF136A63D6 /* MicrosoftCognitiveServicesSpeech-iOS-iOS10.2 */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 336BE4DD936CA2AFCE065BCDF8A37AAD /* Build configuration list for PBXAggregateTarget "MicrosoftCognitiveServicesSpeech-iOS" */;
+			buildConfigurationList = 7BE7DCD9A4D9DC19C2CC3942E4DB6577 /* Build configuration list for PBXAggregateTarget "MicrosoftCognitiveServicesSpeech-iOS-iOS10.2" */;
 			buildPhases = (
 			);
 			dependencies = (
 			);
-			name = "MicrosoftCognitiveServicesSpeech-iOS";
+			name = "MicrosoftCognitiveServicesSpeech-iOS-iOS10.2";
+		};
+		F166DFF0A3C6AA62A77B73BA72CA375C /* MicrosoftCognitiveServicesSpeech-iOS-iOS12.2 */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 6279B60DFF61EDB0C8EDB378C74B16D7 /* Build configuration list for PBXAggregateTarget "MicrosoftCognitiveServicesSpeech-iOS-iOS12.2" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = "MicrosoftCognitiveServicesSpeech-iOS-iOS12.2";
 		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		1C3FFFC620378DE0AFC495B9692BDCC8 /* Pods-speechservicedemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B96803E5DA5EB58737D10646B953185 /* Pods-speechservicedemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		24186A2AB1837C8E007A3539D728555F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		618BFC5A8672AE305A5787E3FC91FE96 /* Pods-speechservicedemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C419930FF689D4DF7EFD64E1953D667 /* Pods-speechservicedemo-dummy.m */; };
+		11E28664EC9A5625FD880674AD280882 /* Pods-SpeechTranslation-FA-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7549CB52BD7438B9A7C6700A828315DC /* Pods-SpeechTranslation-FA-dummy.m */; };
+		18ADA7B5D5D29757E2AB0BCAD585C0A3 /* Pods-SpeechTranslation-FA-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D53F59CD96F533FC9BB87DEC2FBA012 /* Pods-SpeechTranslation-FA-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FB4B07D26507247E21AF3C81086EF68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		90280C183953F626B96FFCB7EC7CACEB /* Pods-speechservicedemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B1E8E7599FDC01A151315EB39A1603C /* Pods-speechservicedemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1A4298D9BCCF6CF45B8888FD2E2E180 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		C656F16A19C062544AE39374C4A0B702 /* Pods-speechservicedemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E4C9DD5D0CD995F0CF56F98AD4F5CC /* Pods-speechservicedemo-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B36B4C740406428C8531EADE158C2E05 /* PBXContainerItemProxy */ = {
+		0A79F7EC1FAFCC8929752D9FA9B2C304 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 97D3B6926BF0A2ABAB7F043559FA98A9;
-			remoteInfo = "MicrosoftCognitiveServicesSpeech-iOS";
+			remoteGlobalIDString = F166DFF0A3C6AA62A77B73BA72CA375C;
+			remoteInfo = "MicrosoftCognitiveServicesSpeech-iOS-iOS12.2";
+		};
+		0F47E9CD49B21C90C55489A006D9E30C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0901BFEAE35D347A5010E4FF136A63D6;
+			remoteInfo = "MicrosoftCognitiveServicesSpeech-iOS-iOS10.2";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0AF4B947ACA2863D159E1F2CA603D811 /* Pods-speechservicedemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-speechservicedemo-frameworks.sh"; sourceTree = "<group>"; };
-		0E2BD4453AC5EC8043632D95037D0A9A /* Pods-speechservicedemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-speechservicedemo-acknowledgements.plist"; sourceTree = "<group>"; };
-		11CE7A70B24CD6D8B800F0D60F04942F /* Pods-speechservicedemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-speechservicedemo.modulemap"; sourceTree = "<group>"; };
-		12FB751723E1D0B31CFDEC93D1102DE6 /* MicrosoftCognitiveServicesSpeech.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MicrosoftCognitiveServicesSpeech.framework; sourceTree = "<group>"; };
-		1C419930FF689D4DF7EFD64E1953D667 /* Pods-speechservicedemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-speechservicedemo-dummy.m"; sourceTree = "<group>"; };
+		1DD0A9ABAC91E0B209B042C07D06D01D /* Pods-SpeechTranslation-FA-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SpeechTranslation-FA-Info.plist"; sourceTree = "<group>"; };
+		28A41E8B43BFCAEE23C17B981DBF413C /* Pods-SpeechTranslation-FA-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SpeechTranslation-FA-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2EF456CABFF2D1EFB890CF7C5D7BB860 /* Pods_speechservicedemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_speechservicedemo.framework; path = "Pods-speechservicedemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		5B96803E5DA5EB58737D10646B953185 /* Pods-speechservicedemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-speechservicedemo-umbrella.h"; sourceTree = "<group>"; };
+		361976DFA78F02FD1DA2F3D48A306DA2 /* Pods-speechservicedemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-speechservicedemo.modulemap"; sourceTree = "<group>"; };
+		5106043D010601A76AE5EDF41A472735 /* Pods-speechservicedemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-speechservicedemo-frameworks.sh"; sourceTree = "<group>"; };
+		58097FF2D60EE72FF2444A4ECBD02435 /* Pods_SpeechTranslation_FA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SpeechTranslation_FA.framework; path = "Pods-SpeechTranslation-FA.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B1E8E7599FDC01A151315EB39A1603C /* Pods-speechservicedemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-speechservicedemo-umbrella.h"; sourceTree = "<group>"; };
+		7549CB52BD7438B9A7C6700A828315DC /* Pods-SpeechTranslation-FA-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SpeechTranslation-FA-dummy.m"; sourceTree = "<group>"; };
+		75D957EDEFCF9898ACB85F0FDFECEA13 /* Pods-SpeechTranslation-FA.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SpeechTranslation-FA.modulemap"; sourceTree = "<group>"; };
+		765610655BADECACDFF8621B901743AF /* Pods-SpeechTranslation-FA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SpeechTranslation-FA.release.xcconfig"; sourceTree = "<group>"; };
+		7A818B69A12640C4117FFF8B8A9B38AD /* Pods-speechservicedemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-speechservicedemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		7D53F59CD96F533FC9BB87DEC2FBA012 /* Pods-SpeechTranslation-FA-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SpeechTranslation-FA-umbrella.h"; sourceTree = "<group>"; };
+		881F03090C718470BAFB2CC4212DC45D /* MicrosoftCognitiveServicesSpeech-iOS-iOS10.2.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "MicrosoftCognitiveServicesSpeech-iOS-iOS10.2.xcconfig"; sourceTree = "<group>"; };
+		8E2CC5241ECFA5AF54582B5FC9B0FAC1 /* Pods-speechservicedemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-speechservicedemo.release.xcconfig"; sourceTree = "<group>"; };
+		9220721726F7766D0038C57FB43635A3 /* Pods-SpeechTranslation-FA-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SpeechTranslation-FA-frameworks.sh"; sourceTree = "<group>"; };
+		93C2980ED01BF23CDCC9A33B8DD46B9F /* MicrosoftCognitiveServicesSpeech.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MicrosoftCognitiveServicesSpeech.framework; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A817E257BAE4F238294A9A5EB809378A /* Pods-speechservicedemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-speechservicedemo-Info.plist"; sourceTree = "<group>"; };
-		B165883B70FCCB9806C5DDD27607EDEC /* Pods-speechservicedemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-speechservicedemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B2BCD9216BEBE2C544AC975A378FD943 /* MicrosoftCognitiveServicesSpeech-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "MicrosoftCognitiveServicesSpeech-iOS.xcconfig"; sourceTree = "<group>"; };
-		F5C2969207E50A1D0427ADF3A5D3C4C1 /* Pods-speechservicedemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-speechservicedemo.debug.xcconfig"; sourceTree = "<group>"; };
-		F7DF83D608EADED15D2A5DDD59876AE0 /* Pods-speechservicedemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-speechservicedemo.release.xcconfig"; sourceTree = "<group>"; };
+		C8E4C9DD5D0CD995F0CF56F98AD4F5CC /* Pods-speechservicedemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-speechservicedemo-dummy.m"; sourceTree = "<group>"; };
+		D08740D69C6E5918F7D9BB9C3D351F77 /* Pods-speechservicedemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-speechservicedemo-Info.plist"; sourceTree = "<group>"; };
+		D154B58C5A8424478324016C1CE3D333 /* Pods-speechservicedemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-speechservicedemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D554D05D283BBFCD119DC7FF4F0C56EC /* Pods-SpeechTranslation-FA-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SpeechTranslation-FA-acknowledgements.plist"; sourceTree = "<group>"; };
+		D77591086458614D1872A4BA1F44409A /* Pods-SpeechTranslation-FA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SpeechTranslation-FA.debug.xcconfig"; sourceTree = "<group>"; };
+		D8F24B51C890C1D0CA2876D79C88DB3A /* Pods-speechservicedemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-speechservicedemo.debug.xcconfig"; sourceTree = "<group>"; };
+		E77091192B4895D1804F23D6761DCB67 /* MicrosoftCognitiveServicesSpeech-iOS-iOS12.2.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "MicrosoftCognitiveServicesSpeech-iOS-iOS12.2.xcconfig"; path = "../MicrosoftCognitiveServicesSpeech-iOS-iOS12.2/MicrosoftCognitiveServicesSpeech-iOS-iOS12.2.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9B4C7FE6ED1AB4004C21EF6695D35D49 /* Frameworks */ = {
+		5034601C3A1F9238DBDDE9074470DCEA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24186A2AB1837C8E007A3539D728555F /* Foundation.framework in Frameworks */,
+				2FB4B07D26507247E21AF3C81086EF68 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		800E28149CBEEAC923C8B58E598BC38A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1A4298D9BCCF6CF45B8888FD2E2E180 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1D0E830B5A6008CDECB496816BECD406 /* Targets Support Files */ = {
+		0098E63A7E4AA168F35E230AD4F1A310 /* MicrosoftCognitiveServicesSpeech-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				4CDBA87E06C9205F42484DE540CD07C0 /* Pods-speechservicedemo */,
+				64101193A4594BF087B9E1C50EB28FD9 /* Frameworks */,
+				B7461F8045BBC24ABBC3009385203462 /* Support Files */,
 			);
-			name = "Targets Support Files";
+			name = "MicrosoftCognitiveServicesSpeech-iOS";
+			path = "MicrosoftCognitiveServicesSpeech-iOS";
 			sourceTree = "<group>";
 		};
-		4CDBA87E06C9205F42484DE540CD07C0 /* Pods-speechservicedemo */ = {
+		64101193A4594BF087B9E1C50EB28FD9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				11CE7A70B24CD6D8B800F0D60F04942F /* Pods-speechservicedemo.modulemap */,
-				B165883B70FCCB9806C5DDD27607EDEC /* Pods-speechservicedemo-acknowledgements.markdown */,
-				0E2BD4453AC5EC8043632D95037D0A9A /* Pods-speechservicedemo-acknowledgements.plist */,
-				1C419930FF689D4DF7EFD64E1953D667 /* Pods-speechservicedemo-dummy.m */,
-				0AF4B947ACA2863D159E1F2CA603D811 /* Pods-speechservicedemo-frameworks.sh */,
-				A817E257BAE4F238294A9A5EB809378A /* Pods-speechservicedemo-Info.plist */,
-				5B96803E5DA5EB58737D10646B953185 /* Pods-speechservicedemo-umbrella.h */,
-				F5C2969207E50A1D0427ADF3A5D3C4C1 /* Pods-speechservicedemo.debug.xcconfig */,
-				F7DF83D608EADED15D2A5DDD59876AE0 /* Pods-speechservicedemo.release.xcconfig */,
+				93C2980ED01BF23CDCC9A33B8DD46B9F /* MicrosoftCognitiveServicesSpeech.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7BC65FFA23B8E2B96E32CFD793A032B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2EF456CABFF2D1EFB890CF7C5D7BB860 /* Pods_speechservicedemo.framework */,
+				58097FF2D60EE72FF2444A4ECBD02435 /* Pods_SpeechTranslation_FA.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7BF1FBD037400C52317667EFB0E1920F /* Pods-speechservicedemo */ = {
+			isa = PBXGroup;
+			children = (
+				361976DFA78F02FD1DA2F3D48A306DA2 /* Pods-speechservicedemo.modulemap */,
+				D154B58C5A8424478324016C1CE3D333 /* Pods-speechservicedemo-acknowledgements.markdown */,
+				7A818B69A12640C4117FFF8B8A9B38AD /* Pods-speechservicedemo-acknowledgements.plist */,
+				C8E4C9DD5D0CD995F0CF56F98AD4F5CC /* Pods-speechservicedemo-dummy.m */,
+				5106043D010601A76AE5EDF41A472735 /* Pods-speechservicedemo-frameworks.sh */,
+				D08740D69C6E5918F7D9BB9C3D351F77 /* Pods-speechservicedemo-Info.plist */,
+				6B1E8E7599FDC01A151315EB39A1603C /* Pods-speechservicedemo-umbrella.h */,
+				D8F24B51C890C1D0CA2876D79C88DB3A /* Pods-speechservicedemo.debug.xcconfig */,
+				8E2CC5241ECFA5AF54582B5FC9B0FAC1 /* Pods-speechservicedemo.release.xcconfig */,
 			);
 			name = "Pods-speechservicedemo";
 			path = "Target Support Files/Pods-speechservicedemo";
 			sourceTree = "<group>";
 		};
-		76B0C9F5C79DFFFEB08505DEDB2D9A77 /* Support Files */ = {
+		AD31C12BF4767C80AFD487ADC29004F8 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B2BCD9216BEBE2C544AC975A378FD943 /* MicrosoftCognitiveServicesSpeech-iOS.xcconfig */,
+				7BF1FBD037400C52317667EFB0E1920F /* Pods-speechservicedemo */,
+				AD484138C0701E6D157924E20AA26F7F /* Pods-SpeechTranslation-FA */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/MicrosoftCognitiveServicesSpeech-iOS";
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		83ABEC5079B479EF482012237681C288 /* Frameworks */ = {
+		AD484138C0701E6D157924E20AA26F7F /* Pods-SpeechTranslation-FA */ = {
 			isa = PBXGroup;
 			children = (
-				12FB751723E1D0B31CFDEC93D1102DE6 /* MicrosoftCognitiveServicesSpeech.framework */,
+				75D957EDEFCF9898ACB85F0FDFECEA13 /* Pods-SpeechTranslation-FA.modulemap */,
+				28A41E8B43BFCAEE23C17B981DBF413C /* Pods-SpeechTranslation-FA-acknowledgements.markdown */,
+				D554D05D283BBFCD119DC7FF4F0C56EC /* Pods-SpeechTranslation-FA-acknowledgements.plist */,
+				7549CB52BD7438B9A7C6700A828315DC /* Pods-SpeechTranslation-FA-dummy.m */,
+				9220721726F7766D0038C57FB43635A3 /* Pods-SpeechTranslation-FA-frameworks.sh */,
+				1DD0A9ABAC91E0B209B042C07D06D01D /* Pods-SpeechTranslation-FA-Info.plist */,
+				7D53F59CD96F533FC9BB87DEC2FBA012 /* Pods-SpeechTranslation-FA-umbrella.h */,
+				D77591086458614D1872A4BA1F44409A /* Pods-SpeechTranslation-FA.debug.xcconfig */,
+				765610655BADECACDFF8621B901743AF /* Pods-SpeechTranslation-FA.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = "Pods-SpeechTranslation-FA";
+			path = "Target Support Files/Pods-SpeechTranslation-FA";
+			sourceTree = "<group>";
+		};
+		B7461F8045BBC24ABBC3009385203462 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				881F03090C718470BAFB2CC4212DC45D /* MicrosoftCognitiveServicesSpeech-iOS-iOS10.2.xcconfig */,
+				E77091192B4895D1804F23D6761DCB67 /* MicrosoftCognitiveServicesSpeech-iOS-iOS12.2.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MicrosoftCognitiveServicesSpeech-iOS-iOS10.2";
 			sourceTree = "<group>";
 		};
 		B8F1FB067BFDF2A33E3DE018084E87A9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D364D04BE23B7B179A0DC7A29DD100AF /* MicrosoftCognitiveServicesSpeech-iOS */,
+				0098E63A7E4AA168F35E230AD4F1A310 /* MicrosoftCognitiveServicesSpeech-iOS */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -127,8 +203,8 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				B8F1FB067BFDF2A33E3DE018084E87A9 /* Pods */,
-				DD0D9D41B41B28CF54210192DD68C029 /* Products */,
-				1D0E830B5A6008CDECB496816BECD406 /* Targets Support Files */,
+				7BC65FFA23B8E2B96E32CFD793A032B3 /* Products */,
+				AD31C12BF4767C80AFD487ADC29004F8 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,51 +216,60 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D364D04BE23B7B179A0DC7A29DD100AF /* MicrosoftCognitiveServicesSpeech-iOS */ = {
-			isa = PBXGroup;
-			children = (
-				83ABEC5079B479EF482012237681C288 /* Frameworks */,
-				76B0C9F5C79DFFFEB08505DEDB2D9A77 /* Support Files */,
-			);
-			name = "MicrosoftCognitiveServicesSpeech-iOS";
-			path = "MicrosoftCognitiveServicesSpeech-iOS";
-			sourceTree = "<group>";
-		};
-		DD0D9D41B41B28CF54210192DD68C029 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				2EF456CABFF2D1EFB890CF7C5D7BB860 /* Pods_speechservicedemo.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2048285A2D55313F2F9ABCAA5DD3B387 /* Headers */ = {
+		AB633DAAD8DF7E0B82ACC8F98445C653 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C3FFFC620378DE0AFC495B9692BDCC8 /* Pods-speechservicedemo-umbrella.h in Headers */,
+				90280C183953F626B96FFCB7EC7CACEB /* Pods-speechservicedemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D187AB410EBC8355AA3D06EC507CCA6C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18ADA7B5D5D29757E2AB0BCAD585C0A3 /* Pods-SpeechTranslation-FA-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		AAC3DEC98AFF0FE2D80E4717D53A15C4 /* Pods-speechservicedemo */ = {
+		9561D9FB2F04B34189424054BDADDE3A /* Pods-SpeechTranslation-FA */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4B4D7A50D13240CA04AFAD70C8557B60 /* Build configuration list for PBXNativeTarget "Pods-speechservicedemo" */;
+			buildConfigurationList = B24CE4314FA5374BFB1623127FF2570F /* Build configuration list for PBXNativeTarget "Pods-SpeechTranslation-FA" */;
 			buildPhases = (
-				2048285A2D55313F2F9ABCAA5DD3B387 /* Headers */,
-				6C9DD719651AB575210AAF5DE4ECD1BE /* Sources */,
-				9B4C7FE6ED1AB4004C21EF6695D35D49 /* Frameworks */,
-				4B3E19AD8CBAAB692D4C577AE65E9193 /* Resources */,
+				D187AB410EBC8355AA3D06EC507CCA6C /* Headers */,
+				7568BEDAAF434276DE13F5E7FB97ABC9 /* Sources */,
+				5034601C3A1F9238DBDDE9074470DCEA /* Frameworks */,
+				CFB4977441474ABEA7CAFE86F8658943 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				768F6D327574007030CFCE3F596A0DB9 /* PBXTargetDependency */,
+				77D163C2E74AE178045324739129AE37 /* PBXTargetDependency */,
+			);
+			name = "Pods-SpeechTranslation-FA";
+			productName = "Pods-SpeechTranslation-FA";
+			productReference = 58097FF2D60EE72FF2444A4ECBD02435 /* Pods_SpeechTranslation_FA.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AAC3DEC98AFF0FE2D80E4717D53A15C4 /* Pods-speechservicedemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FE9969149905B17483C8E81B1AA0C10 /* Build configuration list for PBXNativeTarget "Pods-speechservicedemo" */;
+			buildPhases = (
+				AB633DAAD8DF7E0B82ACC8F98445C653 /* Headers */,
+				8C1965B13E50E32E1FF4822B16F66AF8 /* Sources */,
+				800E28149CBEEAC923C8B58E598BC38A /* Frameworks */,
+				07F16C5C4AF0E5A527079A9ECEC90C89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B87345505301A341711B7A0D037DEBE /* PBXTargetDependency */,
 			);
 			name = "Pods-speechservicedemo";
 			productName = "Pods-speechservicedemo";
@@ -208,18 +293,27 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = DD0D9D41B41B28CF54210192DD68C029 /* Products */;
+			productRefGroup = 7BC65FFA23B8E2B96E32CFD793A032B3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				97D3B6926BF0A2ABAB7F043559FA98A9 /* MicrosoftCognitiveServicesSpeech-iOS */,
+				0901BFEAE35D347A5010E4FF136A63D6 /* MicrosoftCognitiveServicesSpeech-iOS-iOS10.2 */,
+				F166DFF0A3C6AA62A77B73BA72CA375C /* MicrosoftCognitiveServicesSpeech-iOS-iOS12.2 */,
 				AAC3DEC98AFF0FE2D80E4717D53A15C4 /* Pods-speechservicedemo */,
+				9561D9FB2F04B34189424054BDADDE3A /* Pods-SpeechTranslation-FA */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4B3E19AD8CBAAB692D4C577AE65E9193 /* Resources */ = {
+		07F16C5C4AF0E5A527079A9ECEC90C89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFB4977441474ABEA7CAFE86F8658943 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -229,26 +323,95 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6C9DD719651AB575210AAF5DE4ECD1BE /* Sources */ = {
+		7568BEDAAF434276DE13F5E7FB97ABC9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				618BFC5A8672AE305A5787E3FC91FE96 /* Pods-speechservicedemo-dummy.m in Sources */,
+				11E28664EC9A5625FD880674AD280882 /* Pods-SpeechTranslation-FA-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C1965B13E50E32E1FF4822B16F66AF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C656F16A19C062544AE39374C4A0B702 /* Pods-speechservicedemo-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		768F6D327574007030CFCE3F596A0DB9 /* PBXTargetDependency */ = {
+		77D163C2E74AE178045324739129AE37 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "MicrosoftCognitiveServicesSpeech-iOS";
-			target = 97D3B6926BF0A2ABAB7F043559FA98A9 /* MicrosoftCognitiveServicesSpeech-iOS */;
-			targetProxy = B36B4C740406428C8531EADE158C2E05 /* PBXContainerItemProxy */;
+			name = "MicrosoftCognitiveServicesSpeech-iOS-iOS12.2";
+			target = F166DFF0A3C6AA62A77B73BA72CA375C /* MicrosoftCognitiveServicesSpeech-iOS-iOS12.2 */;
+			targetProxy = 0A79F7EC1FAFCC8929752D9FA9B2C304 /* PBXContainerItemProxy */;
+		};
+		7B87345505301A341711B7A0D037DEBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "MicrosoftCognitiveServicesSpeech-iOS-iOS10.2";
+			target = 0901BFEAE35D347A5010E4FF136A63D6 /* MicrosoftCognitiveServicesSpeech-iOS-iOS10.2 */;
+			targetProxy = 0F47E9CD49B21C90C55489A006D9E30C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0086A97765CFBE7B660B7194D7187542 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8F24B51C890C1D0CA2876D79C88DB3A /* Pods-speechservicedemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-speechservicedemo/Pods-speechservicedemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-speechservicedemo/Pods-speechservicedemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0744B7C41F9B7206CD4114CC4D458743 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E77091192B4895D1804F23D6761DCB67 /* MicrosoftCognitiveServicesSpeech-iOS-iOS12.2.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		1F2E81757D76E43042739BC5AEFFE429 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -309,9 +472,9 @@
 			};
 			name = Release;
 		};
-		4F45E17FA9FFE22A66E2B53BCEB72096 /* Debug */ = {
+		274D0C4DA2ACB9FFB0802DAA12CE60A3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F5C2969207E50A1D0427ADF3A5D3C4C1 /* Pods-speechservicedemo.debug.xcconfig */;
+			baseConfigurationReference = 765610655BADECACDFF8621B901743AF /* Pods-SpeechTranslation-FA.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -324,70 +487,16 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-speechservicedemo/Pods-speechservicedemo-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-SpeechTranslation-FA/Pods-SpeechTranslation-FA-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-speechservicedemo/Pods-speechservicedemo.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		97542AF9CFC6FD5621D7FFC235F2F4FE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B2BCD9216BEBE2C544AC975A378FD943 /* MicrosoftCognitiveServicesSpeech-iOS.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		D4A81CB05A7219064DE39FFD3ECE14DE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F7DF83D608EADED15D2A5DDD59876AE0 /* Pods-speechservicedemo.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-speechservicedemo/Pods-speechservicedemo-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-speechservicedemo/Pods-speechservicedemo.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-SpeechTranslation-FA/Pods-SpeechTranslation-FA.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -401,6 +510,93 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		6D9A661B4EA46E535BCDAA64AB1F2A74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 881F03090C718470BAFB2CC4212DC45D /* MicrosoftCognitiveServicesSpeech-iOS-iOS10.2.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		73572D7F98B46DC3C1032AE9BDCAA0EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E77091192B4895D1804F23D6761DCB67 /* MicrosoftCognitiveServicesSpeech-iOS-iOS12.2.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		892B6D53AFFB25ED0A65F40BFF25F036 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 881F03090C718470BAFB2CC4212DC45D /* MicrosoftCognitiveServicesSpeech-iOS-iOS10.2.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9A1365509A39D9490C000238E837A17C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D77591086458614D1872A4BA1F44409A /* Pods-SpeechTranslation-FA.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SpeechTranslation-FA/Pods-SpeechTranslation-FA-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SpeechTranslation-FA/Pods-SpeechTranslation-FA.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		D93A6DF471F8C9D1B0E2C1D667B8C5B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -466,35 +662,48 @@
 			};
 			name = Debug;
 		};
-		F6538A462D74CDB848BA48E329033DF4 /* Release */ = {
+		E58055899810C93FD9E4E48C0972E7A2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B2BCD9216BEBE2C544AC975A378FD943 /* MicrosoftCognitiveServicesSpeech-iOS.xcconfig */;
+			baseConfigurationReference = 8E2CC5241ECFA5AF54582B5FC9B0FAC1 /* Pods-speechservicedemo.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-speechservicedemo/Pods-speechservicedemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-speechservicedemo/Pods-speechservicedemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		336BE4DD936CA2AFCE065BCDF8A37AAD /* Build configuration list for PBXAggregateTarget "MicrosoftCognitiveServicesSpeech-iOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				97542AF9CFC6FD5621D7FFC235F2F4FE /* Debug */,
-				F6538A462D74CDB848BA48E329033DF4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -504,11 +713,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4B4D7A50D13240CA04AFAD70C8557B60 /* Build configuration list for PBXNativeTarget "Pods-speechservicedemo" */ = {
+		6279B60DFF61EDB0C8EDB378C74B16D7 /* Build configuration list for PBXAggregateTarget "MicrosoftCognitiveServicesSpeech-iOS-iOS12.2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4F45E17FA9FFE22A66E2B53BCEB72096 /* Debug */,
-				D4A81CB05A7219064DE39FFD3ECE14DE /* Release */,
+				73572D7F98B46DC3C1032AE9BDCAA0EA /* Debug */,
+				0744B7C41F9B7206CD4114CC4D458743 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BE7DCD9A4D9DC19C2CC3942E4DB6577 /* Build configuration list for PBXAggregateTarget "MicrosoftCognitiveServicesSpeech-iOS-iOS10.2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				892B6D53AFFB25ED0A65F40BFF25F036 /* Debug */,
+				6D9A661B4EA46E535BCDAA64AB1F2A74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FE9969149905B17483C8E81B1AA0C10 /* Build configuration list for PBXNativeTarget "Pods-speechservicedemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0086A97765CFBE7B660B7194D7187542 /* Debug */,
+				E58055899810C93FD9E4E48C0972E7A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B24CE4314FA5374BFB1623127FF2570F /* Build configuration list for PBXNativeTarget "Pods-SpeechTranslation-FA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A1365509A39D9490C000238E837A17C /* Debug */,
+				274D0C4DA2ACB9FFB0802DAA12CE60A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -32,7 +32,7 @@ class SpeechTranslationViewController: UIViewController {
         label.textColor = .black
         label.lineBreakMode = .byWordWrapping
         label.numberOfLines = 0
-        label.text = "Please press \"Translate\" button below then speech ... "
+        label.text = "Please press \"Translate\" button below then speech ... \n* 繁中 to English only at the mement."
         label.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(label)
         
@@ -62,9 +62,9 @@ class SpeechTranslationViewController: UIViewController {
                                        "label": label,
                                        "translateButton": translateButton,
                                        "stopButton": stopButton]
-        let metrics: [String: CGFloat] = ["buttonHeight": 50, "top": 20 + 44]
+        let metrics: [String: CGFloat] = ["buttonHeight": 50, "top": 20 + 44, "bottom": 20 + 20]
         var verticalFormat = "V:|-(top)-[label]-10@100-[translateButton(buttonHeight)]"
-        verticalFormat.append("-5-[stopButton(buttonHeight)]-10-|")
+        verticalFormat.append("-5-[stopButton(buttonHeight)]-(bottom)-|")
         let verticalConstraint = NSLayoutConstraint.constraints(withVisualFormat: verticalFormat, options: .directionLeadingToTrailing, metrics: metrics, views: views)
         view.addConstraints(verticalConstraint)
     }

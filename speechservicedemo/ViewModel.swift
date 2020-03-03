@@ -390,12 +390,12 @@ class ViewModel {
         if let recognizer = speechRecognizer {
             try! recognizer.stopContinuousRecognition()
             if needUpdateLabel {
-                updateLabel(text: "Speech recognizer is terminated\n\nPlease press \"Translate\" button below then speech ... ", color: .black)
+                updateLabel(text: "Speech recognizer is terminated\n\nPlease press \"Translate\" button below then speech ... \n* 繁中 to English only at the mement.", color: .black)
             }
         }
         if let recognizer = translationRecognizer {
             try! recognizer.stopContinuousRecognition()
-            updateLabel(text: "Translation recognizer is terminated\n\nPlease press \"Translate\" button below then speech ... ", color: .black)
+            updateLabel(text: "Translation recognizer is terminated\n\nPlease press \"Translate\" button below then speech ... \n* 繁中 to English only at the mement.", color: .black)
         }
         speechRecognizer = nil
         translationRecognizer = nil

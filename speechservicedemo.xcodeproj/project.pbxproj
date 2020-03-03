@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		195A961F4476366353D5E6F8 /* Pods_speechservicedemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F260A140BE25C90EDD3B829F /* Pods_speechservicedemo.framework */; };
+		195A961F4476366353D5E6F8 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		331FDDD623FD032D00E23F89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331FDDD523FD032D00E23F89 /* AppDelegate.swift */; };
 		331FDDD823FD032D00E23F89 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331FDDD723FD032D00E23F89 /* ViewController.swift */; };
 		331FDDDB23FD032D00E23F89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 331FDDD923FD032D00E23F89 /* Main.storyboard */; };
@@ -18,6 +18,19 @@
 		334E0CCE23FD6663001B8249 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334E0CCD23FD6663001B8249 /* ViewModel.swift */; };
 		33D9A750240E6234001231DD /* SpeechTranslationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D9A74F240E6234001231DD /* SpeechTranslationViewController.swift */; };
 		33D9A752240E63AD001231DD /* SpeechTranslation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33D9A751240E63AD001231DD /* SpeechTranslation.storyboard */; };
+		33D9A76C240E8D29001231DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331FDDD723FD032D00E23F89 /* ViewController.swift */; };
+		33D9A76D240E8D29001231DD /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334E0CCD23FD6663001B8249 /* ViewModel.swift */; };
+		33D9A76E240E8D29001231DD /* SpeechTranslationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D9A74F240E6234001231DD /* SpeechTranslationViewController.swift */; };
+		33D9A76F240E8D29001231DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331FDDD523FD032D00E23F89 /* AppDelegate.swift */; };
+		33D9A773240E8D29001231DD /* wreck-a-nice-beach.wav in Resources */ = {isa = PBXBuildFile; fileRef = 334E0CC723FD1B80001B8249 /* wreck-a-nice-beach.wav */; };
+		33D9A774240E8D29001231DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 331FDDDE23FD032D00E23F89 /* LaunchScreen.storyboard */; };
+		33D9A775240E8D29001231DD /* whatstheweatherlike.wav in Resources */ = {isa = PBXBuildFile; fileRef = 334E0CC823FD1B80001B8249 /* whatstheweatherlike.wav */; };
+		33D9A776240E8D29001231DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 331FDDDC23FD032D00E23F89 /* Assets.xcassets */; };
+		33D9A777240E8D29001231DD /* SpeechTranslation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33D9A751240E63AD001231DD /* SpeechTranslation.storyboard */; };
+		33D9A778240E8D29001231DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 331FDDD923FD032D00E23F89 /* Main.storyboard */; };
+		33D9A780240EA7FB001231DD /* SpeechTranslation-FA-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 33D9A77F240EA7FB001231DD /* SpeechTranslation-FA-Info.plist */; };
+		351FAC2B4C69B16B437055A4 /* Pods_speechservicedemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D8CF4C7B05E9D939E052792 /* Pods_speechservicedemo.framework */; };
+		B6C76EBF76A468D9C9454BBE /* Pods_SpeechTranslation_FA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50B406635E28CD772AE6ADAC /* Pods_SpeechTranslation_FA.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,10 +47,15 @@
 		334E0CCD23FD6663001B8249 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		33D9A74F240E6234001231DD /* SpeechTranslationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechTranslationViewController.swift; sourceTree = "<group>"; };
 		33D9A751240E63AD001231DD /* SpeechTranslation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SpeechTranslation.storyboard; sourceTree = "<group>"; };
+		33D9A77D240E8D29001231DD /* SpeechTranslation-FA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SpeechTranslation-FA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33D9A77F240EA7FB001231DD /* SpeechTranslation-FA-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SpeechTranslation-FA-Info.plist"; sourceTree = "<group>"; };
+		3D8CF4C7B05E9D939E052792 /* Pods_speechservicedemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_speechservicedemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F298FFA8FADF7DECC00C954 /* Pods-speechservicedemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-speechservicedemo.release.xcconfig"; path = "Target Support Files/Pods-speechservicedemo/Pods-speechservicedemo.release.xcconfig"; sourceTree = "<group>"; };
+		50B406635E28CD772AE6ADAC /* Pods_SpeechTranslation_FA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeechTranslation_FA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93F7083CF75D459A7817CA22 /* Pods-SpeechTranslation-FA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeechTranslation-FA.debug.xcconfig"; path = "Target Support Files/Pods-SpeechTranslation-FA/Pods-SpeechTranslation-FA.debug.xcconfig"; sourceTree = "<group>"; };
 		BAD647AA7E3FF98A6575F3EE /* Pods-speechservicedemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-speechservicedemo.debug.xcconfig"; path = "Target Support Files/Pods-speechservicedemo/Pods-speechservicedemo.debug.xcconfig"; sourceTree = "<group>"; };
 		E7FC32850143F50F75B46335 /* Pods-speachservicedemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-speachservicedemo.debug.xcconfig"; path = "Target Support Files/Pods-speachservicedemo/Pods-speachservicedemo.debug.xcconfig"; sourceTree = "<group>"; };
-		F260A140BE25C90EDD3B829F /* Pods_speechservicedemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_speechservicedemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFD1B606FEB9E6378899C798 /* Pods-SpeechTranslation-FA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeechTranslation-FA.release.xcconfig"; path = "Target Support Files/Pods-SpeechTranslation-FA/Pods-SpeechTranslation-FA.release.xcconfig"; sourceTree = "<group>"; };
 		FF2ED3F8E5C85100FDB3BC8F /* Pods-speachservicedemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-speachservicedemo.release.xcconfig"; path = "Target Support Files/Pods-speachservicedemo/Pods-speachservicedemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -46,7 +64,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				195A961F4476366353D5E6F8 /* Pods_speechservicedemo.framework in Frameworks */,
+				195A961F4476366353D5E6F8 /* (null) in Frameworks */,
+				351FAC2B4C69B16B437055A4 /* Pods_speechservicedemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33D9A770240E8D29001231DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6C76EBF76A468D9C9454BBE /* Pods_SpeechTranslation_FA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +83,8 @@
 		1276A079ED5CC20A65A9452C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F260A140BE25C90EDD3B829F /* Pods_speechservicedemo.framework */,
+				50B406635E28CD772AE6ADAC /* Pods_SpeechTranslation_FA.framework */,
+				3D8CF4C7B05E9D939E052792 /* Pods_speechservicedemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -75,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				331FDDD223FD032D00E23F89 /* speechservicedemo.app */,
+				33D9A77D240E8D29001231DD /* SpeechTranslation-FA.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,6 +120,7 @@
 				331FDDDC23FD032D00E23F89 /* Assets.xcassets */,
 				331FDDDE23FD032D00E23F89 /* LaunchScreen.storyboard */,
 				331FDDE123FD032D00E23F89 /* Info.plist */,
+				33D9A77F240EA7FB001231DD /* SpeechTranslation-FA-Info.plist */,
 				334E0CC423FD118A001B8249 /* speechservicedemo-Bridging-Header.h */,
 				334E0CC823FD1B80001B8249 /* whatstheweatherlike.wav */,
 				334E0CC723FD1B80001B8249 /* wreck-a-nice-beach.wav */,
@@ -105,6 +135,8 @@
 				FF2ED3F8E5C85100FDB3BC8F /* Pods-speachservicedemo.release.xcconfig */,
 				BAD647AA7E3FF98A6575F3EE /* Pods-speechservicedemo.debug.xcconfig */,
 				3F298FFA8FADF7DECC00C954 /* Pods-speechservicedemo.release.xcconfig */,
+				93F7083CF75D459A7817CA22 /* Pods-SpeechTranslation-FA.debug.xcconfig */,
+				EFD1B606FEB9E6378899C798 /* Pods-SpeechTranslation-FA.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -120,7 +152,7 @@
 				331FDDCE23FD032D00E23F89 /* Sources */,
 				331FDDCF23FD032D00E23F89 /* Frameworks */,
 				331FDDD023FD032D00E23F89 /* Resources */,
-				1330B0B62A8FA60BBB6B9518 /* [CP] Embed Pods Frameworks */,
+				DE7957F84259AE176B3127BD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +161,25 @@
 			name = speechservicedemo;
 			productName = speachservicedemo;
 			productReference = 331FDDD223FD032D00E23F89 /* speechservicedemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		33D9A769240E8D29001231DD /* SpeechTranslation-FA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33D9A77A240E8D29001231DD /* Build configuration list for PBXNativeTarget "SpeechTranslation-FA" */;
+			buildPhases = (
+				33D9A76A240E8D29001231DD /* [CP] Check Pods Manifest.lock */,
+				33D9A76B240E8D29001231DD /* Sources */,
+				33D9A770240E8D29001231DD /* Frameworks */,
+				33D9A772240E8D29001231DD /* Resources */,
+				CE8BF776529A7DB6292510C1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SpeechTranslation-FA";
+			productName = speachservicedemo;
+			productReference = 33D9A77D240E8D29001231DD /* SpeechTranslation-FA.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -166,6 +217,7 @@
 			projectRoot = "";
 			targets = (
 				331FDDD123FD032D00E23F89 /* speechservicedemo */,
+				33D9A769240E8D29001231DD /* SpeechTranslation-FA */,
 			);
 		};
 /* End PBXProject section */
@@ -178,30 +230,49 @@
 				334E0CC923FD1B80001B8249 /* wreck-a-nice-beach.wav in Resources */,
 				331FDDE023FD032D00E23F89 /* LaunchScreen.storyboard in Resources */,
 				334E0CCA23FD1B80001B8249 /* whatstheweatherlike.wav in Resources */,
+				33D9A780240EA7FB001231DD /* SpeechTranslation-FA-Info.plist in Resources */,
 				331FDDDD23FD032D00E23F89 /* Assets.xcassets in Resources */,
 				33D9A752240E63AD001231DD /* SpeechTranslation.storyboard in Resources */,
 				331FDDDB23FD032D00E23F89 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		33D9A772240E8D29001231DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33D9A773240E8D29001231DD /* wreck-a-nice-beach.wav in Resources */,
+				33D9A774240E8D29001231DD /* LaunchScreen.storyboard in Resources */,
+				33D9A775240E8D29001231DD /* whatstheweatherlike.wav in Resources */,
+				33D9A776240E8D29001231DD /* Assets.xcassets in Resources */,
+				33D9A777240E8D29001231DD /* SpeechTranslation.storyboard in Resources */,
+				33D9A778240E8D29001231DD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1330B0B62A8FA60BBB6B9518 /* [CP] Embed Pods Frameworks */ = {
+		33D9A76A240E8D29001231DD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-speechservicedemo/Pods-speechservicedemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-speechservicedemo/Pods-speechservicedemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpeechTranslation-FA-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-speechservicedemo/Pods-speechservicedemo-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5E3C02DE84C6142F333FA68D /* [CP] Check Pods Manifest.lock */ = {
@@ -226,6 +297,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		CE8BF776529A7DB6292510C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpeechTranslation-FA/Pods-SpeechTranslation-FA-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpeechTranslation-FA/Pods-SpeechTranslation-FA-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpeechTranslation-FA/Pods-SpeechTranslation-FA-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE7957F84259AE176B3127BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-speechservicedemo/Pods-speechservicedemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-speechservicedemo/Pods-speechservicedemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-speechservicedemo/Pods-speechservicedemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -237,6 +342,17 @@
 				334E0CCE23FD6663001B8249 /* ViewModel.swift in Sources */,
 				33D9A750240E6234001231DD /* SpeechTranslationViewController.swift in Sources */,
 				331FDDD623FD032D00E23F89 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33D9A76B240E8D29001231DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33D9A76C240E8D29001231DD /* ViewController.swift in Sources */,
+				33D9A76D240E8D29001231DD /* ViewModel.swift in Sources */,
+				33D9A76E240E8D29001231DD /* SpeechTranslationViewController.swift in Sources */,
+				33D9A76F240E8D29001231DD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +539,53 @@
 			};
 			name = Release;
 		};
+		33D9A77B240E8D29001231DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93F7083CF75D459A7817CA22 /* Pods-SpeechTranslation-FA.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HTPH7PL4A2;
+				INFOPLIST_FILE = "speechservicedemo/SpeechTranslation-FA-info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.funanima.speechtranslation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "speechservicedemo/speechservicedemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
+			};
+			name = Debug;
+		};
+		33D9A77C240E8D29001231DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFD1B606FEB9E6378899C798 /* Pods-SpeechTranslation-FA.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HTPH7PL4A2;
+				INFOPLIST_FILE = "speechservicedemo/SpeechTranslation-FA-info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.funanima.speechtranslation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "speechservicedemo/speechservicedemo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7s";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -440,6 +603,15 @@
 			buildConfigurations = (
 				331FDDE523FD032D00E23F89 /* Debug */,
 				331FDDE623FD032D00E23F89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33D9A77A240E8D29001231DD /* Build configuration list for PBXNativeTarget "SpeechTranslation-FA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33D9A77B240E8D29001231DD /* Debug */,
+				33D9A77C240E8D29001231DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
